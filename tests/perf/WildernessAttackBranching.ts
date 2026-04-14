@@ -1,9 +1,16 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import { DefaultConfig } from "../../src/core/configuration/DefaultConfig";
 import { AttackExecution } from "../../src/core/execution/AttackExecution";
 import { SpawnExecution } from "../../src/core/execution/SpawnExecution";
-import { PlayerInfo, PlayerType } from "../../src/core/game/Game";
+import {
+  Player,
+  PlayerInfo,
+  PlayerType,
+  TerraNullius,
+} from "../../src/core/game/Game";
 import { setup } from "../util/Setup";
+import { UseRealAttackLogic } from "../util/TestConfig";
 
 const DECISION_TICKS = [10, 20, 30] as const;
 const PERCENT_CHOICES = [0, 1, 10, 20, 30] as const;
@@ -17,6 +24,23 @@ type Result = {
   reserveTroopsTick40: number;
   totalAreaTick40: number;
 };
+
+class RealCombatConfig extends UseRealAttackLogic {
+  attackTilesPerTick(
+    attackTroops: number,
+    attacker: Player,
+    defender: Player | TerraNullius,
+    numAdjacentTilesWithEnemy: number,
+  ): number {
+    return DefaultConfig.prototype.attackTilesPerTick.call(
+      this,
+      attackTroops,
+      attacker,
+      defender,
+      numAdjacentTilesWithEnemy,
+    );
+  }
+}
 
 function allPaths(): Path[] {
   const paths: Path[] = [];
@@ -47,6 +71,7 @@ async function runPath(path: Path): Promise<Result> {
     },
     [],
     dirname(fileURLToPath(import.meta.url)),
+    RealCombatConfig,
   );
 
   game.addExecution(

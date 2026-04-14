@@ -1,0 +1,2 @@
+strategy,sim_ticks,attacks_sent,troops_attacking_tick600,reserve_troops_tick600,total_area_tick600,troop_cap_tick600
+10pct_when_troops_reach_30k_40k_50k_plus,600,24,1752,248063,21783,901494.6182175585

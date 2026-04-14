@@ -1,6 +1,7 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { AttackExecution } from "../../src/core/execution/AttackExecution";
+import { SpawnExecution } from "../../src/core/execution/SpawnExecution";
 import { PlayerInfo, PlayerType } from "../../src/core/game/Game";
 import { setup } from "../util/Setup";
 
@@ -30,6 +31,13 @@ function allPaths(): Path[] {
 }
 
 async function runPath(path: Path): Promise<Result> {
+  const playerInfo = new PlayerInfo(
+    "planner",
+    PlayerType.Human,
+    "client_1",
+    "player_1",
+  );
+
   const game = await setup(
     "big_plains",
     {
@@ -37,8 +45,16 @@ async function runPath(path: Path): Promise<Result> {
       randomSpawn: false,
       nations: "none",
     },
-    [new PlayerInfo("planner", PlayerType.Human, "client_1", "player_1")],
+    [],
     dirname(fileURLToPath(import.meta.url)),
+  );
+
+  game.addExecution(
+    new SpawnExecution(
+      "wilderness_branching_perf",
+      playerInfo,
+      game.ref(100, 100),
+    ),
   );
 
   while (game.inSpawnPhase()) {
@@ -46,14 +62,6 @@ async function runPath(path: Path): Promise<Result> {
   }
 
   const player = game.player("player_1");
-
-  if (player.numTilesOwned() === 0) {
-    const seed = game.ref(100, 100);
-    if (!game.map().isLand(seed)) {
-      throw new Error("Expected seed tile to be land on big_plains");
-    }
-    player.conquer(seed);
-  }
 
   const decisionsByTick = new Map<number, number>([
     [DECISION_TICKS[0], path[0]],

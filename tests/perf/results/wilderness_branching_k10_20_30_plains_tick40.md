@@ -17,9 +17,9 @@ npx tsx tests/perf/WildernessAttackBranching.ts > tests/perf/results/wilderness_
 
 ## Runtime observed
 
-- Simulated 125 paths in ~0.76s (~6.10ms/path) on this environment.
+- Simulated 125 paths in ~1.10s (~8.84ms/path) on this environment.
 
 ## Notes
 
-- The script uses `big_plains` and ensures the player owns one seed land tile before decisions begin.
+- The script uses `big_plains` and uses actual SpawnExecution at `game.ref(100, 100)`, so the player starts with the normal spawn area footprint instead of a single tile.
 - CSV output is deterministic for this setup.

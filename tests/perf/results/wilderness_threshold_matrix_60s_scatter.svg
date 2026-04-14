@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980" height="700" viewBox="0 0 980 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Troop cap vs current troops scatter plot">
+  <rect x="0" y="0" width="980" height="700" fill="white" />
+  <line x1="100" y1="50" x2="100" y2="610" stroke="#e5e7eb" stroke-width="1" />
+<line x1="240" y1="50" x2="240" y2="610" stroke="#e5e7eb" stroke-width="1" />
+<line x1="380.00000000000006" y1="50" x2="380.00000000000006" y2="610" stroke="#e5e7eb" stroke-width="1" />
+<line x1="520.0000000000001" y1="50" x2="520.0000000000001" y2="610" stroke="#e5e7eb" stroke-width="1" />
+<line x1="660" y1="50" x2="660" y2="610" stroke="#e5e7eb" stroke-width="1" />
+<line x1="799.9999999999999" y1="50" x2="799.9999999999999" y2="610" stroke="#e5e7eb" stroke-width="1" />
+<line x1="940" y1="50" x2="940" y2="610" stroke="#e5e7eb" stroke-width="1" />
+<line x1="100" y1="610" x2="940" y2="610" stroke="#e5e7eb" stroke-width="1" />
+<line x1="100" y1="516.6666666666666" x2="940" y2="516.6666666666666" stroke="#e5e7eb" stroke-width="1" />
+<line x1="100" y1="423.3333333333333" x2="940" y2="423.3333333333333" stroke="#e5e7eb" stroke-width="1" />
+<line x1="100" y1="330" x2="940" y2="330" stroke="#e5e7eb" stroke-width="1" />
+<line x1="100" y1="236.66666666666663" x2="940" y2="236.66666666666663" stroke="#e5e7eb" stroke-width="1" />
+<line x1="100" y1="143.33333333333331" x2="940" y2="143.33333333333331" stroke="#e5e7eb" stroke-width="1" />
+<line x1="100" y1="50" x2="940" y2="50" stroke="#e5e7eb" stroke-width="1" />
+  
+<line x1="100" y1="610" x2="940" y2="610" stroke="#111827" stroke-width="2" />
+<line x1="100" y1="50" x2="100" y2="610" stroke="#111827" stroke-width="2" />
+
+  <text x="100" y="634" text-anchor="middle" font-size="12" fill="#374151">14.4k</text>
+<text x="240" y="634" text-anchor="middle" font-size="12" fill="#374151">28.4k</text>
+<text x="380.00000000000006" y="634" text-anchor="middle" font-size="12" fill="#374151">42.4k</text>
+<text x="520.0000000000001" y="634" text-anchor="middle" font-size="12" fill="#374151">56.4k</text>
+<text x="660" y="634" text-anchor="middle" font-size="12" fill="#374151">70.4k</text>
+<text x="799.9999999999999" y="634" text-anchor="middle" font-size="12" fill="#374151">84.4k</text>
+<text x="940" y="634" text-anchor="middle" font-size="12" fill="#374151">98.4k</text>
+  <text x="88" y="614" text-anchor="end" font-size="12" fill="#374151">0.0k</text>
+<text x="88" y="520.6666666666666" text-anchor="end" font-size="12" fill="#374151">5.8k</text>
+<text x="88" y="427.3333333333333" text-anchor="end" font-size="12" fill="#374151">11.6k</text>
+<text x="88" y="334" text-anchor="end" font-size="12" fill="#374151">17.4k</text>
+<text x="88" y="240.66666666666663" text-anchor="end" font-size="12" fill="#374151">23.2k</text>
+<text x="88" y="147.33333333333331" text-anchor="end" font-size="12" fill="#374151">29.0k</text>
+<text x="88" y="54" text-anchor="end" font-size="12" fill="#374151">34.8k</text>
+  <circle cx="230.0033544193874" cy="238.05982598965892" r="6.5" fill="hsl(220 78% 74%)" stroke="#0f172a" stroke-width="0.8"><title>same_1pct: cap=273744.8, total=230977</title></circle>
+<circle cx="709.9018654233711" cy="99.28978232431929" r="6.5" fill="hsl(220 78% 61%)" stroke="#0f172a" stroke-width="0.8"><title>same_5pct: cap=753702.7, total=317154</title></circle>
+<circle cx="857.6754989144675" cy="207.72516497143286" r="6.5" fill="hsl(220 78% 49%)" stroke="#0f172a" stroke-width="0.8"><title>same_10pct: cap=901494.6, total=249815</title></circle>
+<circle cx="895.0000000000001" cy="332.0460678937774" r="6.5" fill="hsl(220 78% 37%)" stroke="#0f172a" stroke-width="0.8"><title>same_20pct: cap=938823.7, total=172611</title></circle>
+<circle cx="145" cy="326.9897542937546" r="6.5" fill="hsl(25 78% 74%)" stroke="#0f172a" stroke-width="0.8"><title>doubling_1pct: cap=188730.9, total=175751</title></circle>
+<circle cx="497.26262516611513" cy="91.48148148148148" r="6.5" fill="hsl(25 78% 61%)" stroke="#0f172a" stroke-width="0.8"><title>doubling_5pct: cap=541037.1, total=322003</title></circle>
+<circle cx="723.2386535429953" cy="103.95640551313014" r="6.5" fill="hsl(25 78% 49%)" stroke="#0f172a" stroke-width="0.8"><title>doubling_10pct: cap=767041.1, total=314256</title></circle>
+<circle cx="843.4416473128666" cy="201.82183832885843" r="6.5" fill="hsl(25 78% 37%)" stroke="#0f172a" stroke-width="0.8"><title>doubling_20pct: cap=887259.0, total=253481</title></circle>
+<circle cx="406.0005060674217" cy="129.9465015336296" r="6.5" fill="hsl(135 78% 74%)" stroke="#0f172a" stroke-width="0.8"><title>halving_1pct: cap=449763.7, total=298116</title></circle>
+<circle cx="844.3795243986586" cy="194.21160327353746" r="6.5" fill="hsl(135 78% 61%)" stroke="#0f172a" stroke-width="0.8"><title>halving_5pct: cap=888197.0, total=258207</title></circle>
+<circle cx="891.676418517057" cy="304.00124061416034" r="6.5" fill="hsl(135 78% 49%)" stroke="#0f172a" stroke-width="0.8"><title>halving_10pct: cap=935499.7, total=190027</title></circle>
+<circle cx="872.6588330191297" cy="403.69435366429184" r="6.5" fill="hsl(135 78% 37%)" stroke="#0f172a" stroke-width="0.8"><title>halving_20pct: cap=916479.8, total=128117</title></circle>
+
+  <text x="520" y="670" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Troop Cap</text>
+  <text x="26" y="330" transform="rotate(-90, 26, 330)" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Current Troops</text>
+
+  <text x="750" y="58" font-size="13" font-weight="700" fill="#111827">Progression (hue)</text>
+  <circle cx="780" cy="86" r="6" fill="hsl(220 78% 52%)" /><text x="794" y="90" font-size="12" fill="#111827">same</text>
+<circle cx="780" cy="110" r="6" fill="hsl(25 78% 52%)" /><text x="794" y="114" font-size="12" fill="#111827">doubling</text>
+<circle cx="780" cy="134" r="6" fill="hsl(135 78% 52%)" /><text x="794" y="138" font-size="12" fill="#111827">halving</text>
+
+  <text x="750" y="154" font-size="13" font-weight="700" fill="#111827">Attack % (lightness)</text>
+  <circle cx="780" cy="182" r="6" fill="hsl(220 78% 74%)" /><text x="794" y="186" font-size="12" fill="#111827">1%</text>
+<circle cx="780" cy="206" r="6" fill="hsl(220 78% 61%)" /><text x="794" y="210" font-size="12" fill="#111827">5%</text>
+<circle cx="780" cy="230" r="6" fill="hsl(220 78% 49%)" /><text x="794" y="234" font-size="12" fill="#111827">10%</text>
+<circle cx="780" cy="254" r="6" fill="hsl(220 78% 37%)" /><text x="794" y="258" font-size="12" fill="#111827">20%</text>
+</svg>
